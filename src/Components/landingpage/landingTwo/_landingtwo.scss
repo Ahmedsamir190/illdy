@@ -1,0 +1,112 @@
+.landing-two {
+  padding: 75px 0;
+  .about-info {
+    h1 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    p {
+      width: 70%;
+      text-align: center;
+      margin: auto;
+      color: gray;
+      line-height: 1.9;
+    }
+  }
+  .skills {
+    margin-top: 160px;
+    .skills-row {
+      display: flex;
+      justify-content: space-around;
+      gap: 90px 30px;
+      padding: 0 30px;
+      @media (max-width: 991px) {
+        flex-direction: column;
+      }
+      div {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .typography-skill,
+  .design-skill,
+  .development-skill {
+    position: relative;
+    margin-bottom: 25px;
+    span {
+      position: absolute;
+      &:first-child {
+        border: 1px solid gainsboro;
+        width: 100%;
+      }
+      &:last-child {
+        border: 1px solid #f18b6d;
+        width: 60%;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -5px;
+          right: 0;
+          border: 5px solid #f18b6d;
+          border-radius: 50%;
+        }
+        &::after {
+          content: "60%";
+          position: absolute;
+          bottom: 26px;
+          right: -27px;
+          width: fit-content;
+          height: 30px;
+          background-color: #f18b6d;
+          text-align: center;
+          color: white;
+          padding: 2px 15px;
+          border-radius: 10%;
+        }
+      }
+    }
+  }
+  .design-skill {
+    & span:last-child {
+      border: 1px solid #f1d204;
+      width: 82%;
+      &::before {
+        border: 5px solid #f1d204;
+      }
+      &::after {
+        content: "82%";
+        background-color: #f1d204;
+      }
+    }
+  }
+
+  .development-skill {
+    & span:last-child {
+      border: 1px solid #6a4d8a;
+      width: 86%;
+      &::before {
+        border: 5px solid #6a4d8a;
+      }
+      &::after {
+        content: "86%";
+        background-color: #6a4d8a;
+      }
+    }
+  }
+
+  .typography-skill-bottom,
+  .design-skill-bottom,
+  .development-skill-bottom {
+    color: #f18b6d;
+    span {
+      margin-left: 10px;
+    }
+  }
+  .design-skill-bottom {
+    color: #f1d204;
+  }
+  .development-skill-bottom {
+    color: #6a4d8a;
+  }
+}

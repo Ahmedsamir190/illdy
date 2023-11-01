@@ -1,0 +1,81 @@
+/*start landing-four*/
+@use "../../../helper/mixin" as *;
+.landing-four {
+  background-color: #222f36;
+  min-height: 100vh;
+  padding: 120px 0px;
+  text-align: center;
+  .content-four {
+    button {
+      @include yellowbutton;
+      padding: 10px 28px;
+      border-radius: 6%;
+      svg {
+        margin-right: 12px;
+      }
+      &:hover {
+        background-color: #6a4d8a;
+      }
+    }
+  }
+}
+.all-card {
+  .row {
+    @media (max-width: 991px) {
+      gap: 100px 0px;
+      justify-content: center;
+    }
+    .card-four {
+      background-color: white;
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+      .title-info {
+        padding: 35px 19px;
+        text-align: start;
+        h3 {
+          margin-bottom: 30px;
+          &:hover {
+            color: #f1d204;
+            cursor: pointer;
+          }
+        }
+        p {
+          padding: 0px 7px;
+          margin-bottom: 35px;
+        }
+        a {
+          padding-left: 10px;
+          color: #f1d204;
+          svg {
+            margin: 0 5px 3px 0;
+          }
+          &:hover {
+            color: #6a4d8a;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*End landing-four*/
+/*start counter page*/
+.landing-five-counter {
+  background-image: url(/src/images/front-page/frontpagecounter.jpg);
+  background-size: cover;
+  padding: 80px 0;
+  background-position: center;
+  .row {
+    gap: 55px 0;
+    justify-content: center;
+
+    .logo-number:not(.special) {
+      @media (min-width: 991px) {
+        border-right: 2px solid white;
+      }
+    }
+  }
+}
+/*End counter page*/

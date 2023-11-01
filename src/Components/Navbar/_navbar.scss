@@ -1,0 +1,37 @@
+/*start NavBar*/
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 40px 0;
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 991px) {
+      gap: 20px 0;
+      justify-content: center;
+    }
+    nav {
+      @media (max-width: 991px) {
+        padding: 12px;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        color: white;
+        @media (max-width: 991px) {
+          justify-content: center;
+        }
+        li:hover {
+          color: #ffde00;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/*End header*/

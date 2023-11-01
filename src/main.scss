@@ -1,0 +1,12 @@
+@use "./global";
+
+@use "./Components/Navbar/navbar";
+@use "./Components/landingpage/landingOne/landingone";
+@use "./Components/landingpage/landingTwo/landingtwo";
+@use "./Components/landingpage/landingThree/landingthree";
+@use "./Components/landingpage/landingFour/landingfour";
+@use "./Components/landingpage/testimonials/testimonials";
+@use "./Components/landingpage/service/service";
+@use "./Components/landingpage/Team/team";
+@use "./Components/landingpage/contactus/contact";
+@use "./Components/footer/footer";

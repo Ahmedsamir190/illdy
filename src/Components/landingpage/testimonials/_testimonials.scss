@@ -1,0 +1,48 @@
+.testimonials {
+  background-image: url(/src/images/front-page/testiomnials.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  .content-five {
+    color: white;
+    h1 {
+      text-align: center;
+      margin-bottom: 75px;
+    }
+  }
+}
+.swiper {
+  width: 85%;
+  height: 100%;
+  color: white;
+  .swiper-pagination-bullet {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+    img {
+      border-radius: 50%;
+    }
+    p {
+      line-height: 2;
+      background-color: #6a4d89;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h5 {
+      text-transform: capitalize;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+/* تغيير حجم الدوائر */
+
+/* تغيير لون الدوائر عند تحويل المؤشر إليها */

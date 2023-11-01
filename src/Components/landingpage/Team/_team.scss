@@ -1,0 +1,97 @@
+.team {
+  padding: 100px 0;
+  background-image: url(/src/images/front-page/pattern.png);
+  background-repeat: repeat;
+
+  .team-content {
+    h1,
+    p {
+      text-align: center;
+    }
+    .team-member {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 100px;
+      gap: 30px;
+      flex-grow: calc(3 / 100);
+      @media (max-width: 991px) {
+        flex-wrap: wrap;
+      }
+      .member-one,
+      .member-two,
+      .member-three {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+      }
+      .member-one,
+      .member-two,
+      .member-three {
+        div:first-child {
+          img {
+            border-radius: 50%;
+          }
+        }
+        div:last-child {
+          h4 {
+            font-weight: 900;
+          }
+          p {
+            color: gray;
+            margin-top: 25px;
+          }
+        }
+      }
+      .member-one {
+        div:last-child {
+          span,
+          .icons-one {
+            color: #f18b6d;
+          }
+        }
+      }
+      .member-two {
+        div:last-child {
+          span,
+          .icons-two {
+            color: #f1d204;
+          }
+        }
+      }
+      .member-three {
+        div:last-child {
+          span,
+          .icons-three {
+            color: #6a4d8a;
+          }
+        }
+      }
+      .icons-one,
+      .icons-two,
+      .icons-three {
+        svg {
+          border-radius: 50%;
+          font-size: x-large;
+          padding: 5px 0;
+          margin: 0px 5px;
+        }
+      }
+      .icons-one {
+        svg {
+          border: 1px solid #f18b6d;
+        }
+      }
+      .icons-two {
+        svg {
+          border: 1px solid #f1d204;
+        }
+      }
+      .icons-three {
+        svg {
+          border: 1px solid #6a4d8a;
+        }
+      }
+    }
+  }
+}
